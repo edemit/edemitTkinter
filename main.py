@@ -1,5 +1,5 @@
 from tkinter import *
-
+#amogus
 #Doing puissance 4 gam with only three functions: placerSupport to make canvas and all main graphic details, placerPion(i,j,couleur) to place the token, and main function show() to launch game, change players and check if someone has won
 
 column = 8
@@ -39,16 +39,7 @@ def placerPion(i,j,couleur):
 
 #main function show() to launch game, let players play, change players and check if someone has won and pack everything 
 def show():
-    global canvas, grille, gameState
-    for i in range(column):
-        for j in range(lines):
-            grille[i][j] = 0
-            canvas.create_oval(50+80*i,50+80*j,110+80*i,110+80*j,fill='white',outline='white')
-            canvas.create_oval(50+80*i,50+80*j,110+80*i,110+80*j,fill='white',outline='white')
-    gameState = True
-    joueur = 1
-    canvas.bind_all('<Button-1>', placerPion(i,j,joueur))
-    canvas.pack()
+    
 
 fenetre = Tk()
 placerSupport()
